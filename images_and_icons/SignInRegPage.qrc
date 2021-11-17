@@ -1,0 +1,54 @@
+<RCC>
+  <qresource prefix="Main">
+    <file>SignInRegPage/EnterButton.png</file>
+    <file>SignInRegPage/Logo.png</file>
+  </qresource>
+  <qresource prefix="User">
+    <file>User/logout.png</file>
+    <file>User/notifications  black.png</file>
+    <file>User/sun.png</file>
+    <file>User/windows.png</file>
+    <file>User/arrow.png</file>
+    <file>User/sms.png</file>
+    <file>User/messageContainer.png</file>
+    <file>User/friendContainer.png</file>
+    <file>User/friendSearch.png</file>
+    <file>User/scope.png</file>
+    <file>User/mail.png</file>
+    <file>User/nametag.png</file>
+    <file>User/phone.png</file>
+    <file>User/polygon2.png</file>
+    <file>User/menu.png</file>
+    <file>User/polygon2.png</file>
+    <file>User/btn1.png</file>
+    <file>User/btn2.png</file>
+    <file>User/Polygon.png</file>
+    <file>User/facebook.png</file>
+    <file>User/google.png</file>
+    <file>User/twitter.png</file>
+    <file>User/Avatar.png</file>
+    <file>User/notifications.png</file>
+    <file>User/createPost.png</file>
+    <file>User/friend.png</file>
+    <file>User/history.png</file>
+    <file>User/home.png</file>
+    <file>User/meetSchedule.png</file>
+    <file>User/profile.png</file>
+    <file>User/setting.png</file>
+    <file>User/Style1.png</file>
+  </qresource>
+  <qresource prefix="admin">
+    <file>Admin/style3.png</file>
+    <file>Admin/style2.png</file>
+    <file>Admin/arrow 1.png</file>
+    <file>Admin/arrow 2.png</file>
+    <file>Admin/contentBox1.png</file>
+    <file>Admin/contentBox2.png</file>
+    <file>Admin/graph1.png</file>
+    <file>Admin/graph2.png</file>
+    <file>Admin/style1.png</file>
+    <file>Admin/admin log.png</file>
+    <file>Admin/make announcement.png</file>
+    <file>Admin/manage user.png</file>
+  </qresource>
+</RCC>

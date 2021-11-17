@@ -1,0 +1,5208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>903</width>
+    <height>647</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QStackedWidget" name="mainSwitch">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="SignInRegPage">
+       <widget class="QWidget" name="leftBg" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>100</y>
+          <width>141</width>
+          <height>451</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <widget class="QPushButton" name="SignIn">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>174</y>
+           <width>141</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Bahnschrift SemiBold</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(92, 92, 92);</string>
+         </property>
+         <property name="text">
+          <string>Sign In</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Reg">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>225</y>
+           <width>141</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Bahnschrift SemiBold</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(92, 92, 92);</string>
+         </property>
+         <property name="text">
+          <string>Register</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="middleBg" native="true">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>10</y>
+          <width>401</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(62, 145, 255);</string>
+        </property>
+        <widget class="QFrame" name="title">
+         <property name="geometry">
+          <rect>
+           <x>49</x>
+           <y>309</y>
+           <width>295</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="Title1">
+            <property name="font">
+             <font>
+              <family>Bahnschrift SemiBold</family>
+              <pointsize>18</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Welcome to IAmFine</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <family>Bahnschrift SemiBold</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Notification System</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QLabel" name="logo">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>200</y>
+           <width>275</width>
+           <height>112</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>275</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>112</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Main/SignInRegPage/Logo.png&quot; width=&quot;112&quot; height=&quot;112&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="rightBg" native="true">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>100</y>
+          <width>351</width>
+          <height>451</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <widget class="QStackedWidget" name="switchSignInReg">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>351</width>
+           <height>451</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="SignIn_2">
+          <widget class="QLabel" name="titleSignIn">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>20</y>
+             <width>71</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Bahnschrift SemiBold</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(62, 145, 255);</string>
+           </property>
+           <property name="text">
+            <string>Sign In</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="emailEnter">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>120</y>
+             <width>261</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(167, 165, 165);</string>
+           </property>
+           <property name="text">
+            <string>Email</string>
+           </property>
+           <property name="frame">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="PasswordEnter">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>190</y>
+             <width>261</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(167, 165, 165);</string>
+           </property>
+           <property name="text">
+            <string>Password</string>
+           </property>
+           <property name="frame">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="Line" name="line">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>140</y>
+             <width>271</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(167, 165, 165);</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="Line" name="line_2">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>210</y>
+             <width>271</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(167, 165, 165);</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="LoginButton">
+           <property name="geometry">
+            <rect>
+             <x>145</x>
+             <y>310</y>
+             <width>61</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="icon">
+            <iconset resource="images_and_icons/SignInRegPage.qrc">
+             <normaloff>:/Main/SignInRegPage/EnterButton.png</normaloff>:/Main/SignInRegPage/EnterButton.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>60</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="Register">
+          <widget class="QLabel" name="titleSignUp">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>20</y>
+             <width>81</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Bahnschrift SemiBold</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(62, 145, 255);</string>
+           </property>
+           <property name="text">
+            <string>Sign Up</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="usenameEnter">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>120</y>
+             <width>261</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(167, 165, 165);</string>
+           </property>
+           <property name="text">
+            <string>Username</string>
+           </property>
+           <property name="frame">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="Line" name="line_4">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>140</y>
+             <width>271</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(167, 165, 165);</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="Line" name="line_3">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>210</y>
+             <width>271</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(167, 165, 165);</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="regButton">
+           <property name="geometry">
+            <rect>
+             <x>145</x>
+             <y>310</y>
+             <width>61</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="icon">
+            <iconset resource="images_and_icons/SignInRegPage.qrc">
+             <normaloff>:/Main/SignInRegPage/EnterButton.png</normaloff>:/Main/SignInRegPage/EnterButton.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>60</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="PasswordEnter_2">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>190</y>
+             <width>261</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(167, 165, 165);</string>
+           </property>
+           <property name="text">
+            <string>Email</string>
+           </property>
+           <property name="frame">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="emailEnter_3">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>260</y>
+             <width>261</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(167, 165, 165);</string>
+           </property>
+           <property name="text">
+            <string>Password</string>
+           </property>
+           <property name="frame">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="Line" name="line_5">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>280</y>
+             <width>271</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(167, 165, 165);</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="UserPage">
+       <widget class="QWidget" name="Button" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>51</width>
+          <height>631</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(32, 34, 37);</string>
+        </property>
+        <widget class="QPushButton" name="profileBtn">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>60</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images_and_icons/SignInRegPage.qrc">
+           <normaloff>:/User/User/profile.png</normaloff>:/User/User/profile.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="mainBtn">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images_and_icons/SignInRegPage.qrc">
+           <normaloff>:/User/User/home.png</normaloff>:/User/User/home.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="friendBtn">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>120</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images_and_icons/SignInRegPage.qrc">
+           <normaloff>:/User/User/friend.png</normaloff>:/User/User/friend.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="createPostBtn">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>180</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images_and_icons/SignInRegPage.qrc">
+           <normaloff>:/User/User/createPost.png</normaloff>:/User/User/createPost.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="meetScheduleBtn">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>240</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images_and_icons/SignInRegPage.qrc">
+           <normaloff>:/User/User/meetSchedule.png</normaloff>:/User/User/meetSchedule.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="HistoryBtn">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>300</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images_and_icons/SignInRegPage.qrc">
+           <normaloff>:/User/User/history.png</normaloff>:/User/User/history.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="settingButton">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>580</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images_and_icons/SignInRegPage.qrc">
+           <normaloff>:/User/User/setting.png</normaloff>:/User/User/setting.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QStackedWidget" name="userPageSwitch">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>0</y>
+          <width>841</width>
+          <height>631</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>8</number>
+        </property>
+        <widget class="QWidget" name="Homepage">
+         <widget class="QLabel" name="Style">
+          <property name="geometry">
+           <rect>
+            <x>-50</x>
+            <y>-30</y>
+            <width>921</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Style1.png&quot;width=&quot;1000&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="background">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>841</width>
+            <height>631</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Notification">
+          <property name="geometry">
+           <rect>
+            <x>760</x>
+            <y>30</y>
+            <width>51</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/User/User/notifications.png</normaloff>:/User/User/notifications.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="avatar">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>20</y>
+            <width>131</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Avatar.png&quot; height=&quot;130&quot; weight=&quot;130&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="name">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>40</y>
+            <width>501</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>20</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="caption">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>90</y>
+            <width>511</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(209, 209, 209);</string>
+          </property>
+          <property name="text">
+           <string>Hi I am not here for the app</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="googleStatus">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>235</y>
+            <width>4</width>
+            <height>60</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 255, 65);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="facebookStatus">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>330</y>
+            <width>4</width>
+            <height>60</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 255, 65);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="twitterStatus">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>440</y>
+            <width>4</width>
+            <height>60</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(196, 196, 196);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="Line" name="line_7">
+          <property name="geometry">
+           <rect>
+            <x>24</x>
+            <y>270</y>
+            <width>721</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="Line" name="line_6">
+          <property name="geometry">
+           <rect>
+            <x>24</x>
+            <y>368</y>
+            <width>721</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="Line" name="line_8">
+          <property name="geometry">
+           <rect>
+            <x>24</x>
+            <y>480</y>
+            <width>721</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="googleBtn">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>220</y>
+            <width>71</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/User/User/google.png</normaloff>:/User/User/google.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="facebookBtn">
+          <property name="geometry">
+           <rect>
+            <x>43</x>
+            <y>320</y>
+            <width>61</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/User/User/facebook.png</normaloff>:/User/User/facebook.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="twitterBtn">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>430</y>
+            <width>71</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/User/User/twitter.png</normaloff>:/User/User/twitter.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="googleTitle">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>225</y>
+            <width>511</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Google Account</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="facebookTitle">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>320</y>
+            <width>511</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Facebook Account</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="twitterTitle">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>430</y>
+            <width>511</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Twitter Account</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="googleAcc">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>235</y>
+            <width>451</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Account@gmail.com</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="facebookAcc">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>332</y>
+            <width>451</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Facebook</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="twitterAcc">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>442</y>
+            <width>451</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Twitter</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="notification_Win" native="true">
+          <property name="geometry">
+           <rect>
+            <x>19</x>
+            <y>20</y>
+            <width>741</width>
+            <height>581</height>
+           </rect>
+          </property>
+          <widget class="QLabel" name="style1">
+           <property name="geometry">
+            <rect>
+             <x>690</x>
+             <y>18</y>
+             <width>51</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Polygon.png&quot; width=&quot;50&quot; height=&quot;50&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="style2">
+           <property name="geometry">
+            <rect>
+             <x>83</x>
+             <y>7</y>
+             <width>641</width>
+             <height>231</height>
+            </rect>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/polygon2.png&quot; width=&quot;625&quot;height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="notificationTitle">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>30</y>
+             <width>151</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Bahnschrift SemiBold</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(242, 242, 242);</string>
+           </property>
+           <property name="text">
+            <string>NOTIFICATION</string>
+           </property>
+          </widget>
+          <widget class="QScrollArea" name="noticeContent">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>60</y>
+             <width>591</width>
+             <height>141</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(166, 198, 240);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>591</width>
+              <height>141</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <zorder>background</zorder>
+         <zorder>Style</zorder>
+         <zorder>Notification</zorder>
+         <zorder>avatar</zorder>
+         <zorder>name</zorder>
+         <zorder>caption</zorder>
+         <zorder>googleStatus</zorder>
+         <zorder>facebookStatus</zorder>
+         <zorder>twitterStatus</zorder>
+         <zorder>line_7</zorder>
+         <zorder>line_6</zorder>
+         <zorder>line_8</zorder>
+         <zorder>googleBtn</zorder>
+         <zorder>facebookBtn</zorder>
+         <zorder>twitterBtn</zorder>
+         <zorder>googleTitle</zorder>
+         <zorder>facebookTitle</zorder>
+         <zorder>twitterTitle</zorder>
+         <zorder>googleAcc</zorder>
+         <zorder>facebookAcc</zorder>
+         <zorder>twitterAcc</zorder>
+         <zorder>notification_Win</zorder>
+        </widget>
+        <widget class="QWidget" name="Friendpage">
+         <widget class="QLabel" name="background_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>841</width>
+            <height>631</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Style_3">
+          <property name="geometry">
+           <rect>
+            <x>-50</x>
+            <y>-30</y>
+            <width>921</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Style1.png&quot;width=&quot;1000&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="friendSearch">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>50</y>
+            <width>561</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/friendSearch.png&quot;width=&quot;550&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="searchLogo">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>60</y>
+            <width>31</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/scope.png&quot;width=&quot;25&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="searchEnter">
+          <property name="geometry">
+           <rect>
+            <x>192</x>
+            <y>68</y>
+            <width>481</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(188, 215, 250);
+color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Search by username</string>
+          </property>
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="friendContainer">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>120</y>
+            <width>811</width>
+            <height>511</height>
+           </rect>
+          </property>
+          <property name="toolTipDuration">
+           <number>-1</number>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/friendContainer.png&quot;width=&quot;800&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="friendTitle">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>120</y>
+            <width>111</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Friends&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QScrollArea" name="FriendContent">
+          <property name="geometry">
+           <rect>
+            <x>39</x>
+            <y>156</y>
+            <width>761</width>
+            <height>471</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(166, 198, 240);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>761</width>
+             <height>471</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="CreatePostpage">
+         <widget class="QLabel" name="background_4">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>841</width>
+            <height>631</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Style_4">
+          <property name="geometry">
+           <rect>
+            <x>-50</x>
+            <y>-30</y>
+            <width>921</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Style1.png&quot;width=&quot;1000&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="bgContainer">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>20</y>
+            <width>891</width>
+            <height>581</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/friendContainer.png&quot;height=&quot;600&quot; /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="contentContainer">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>30</y>
+            <width>741</width>
+            <height>431</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/messageContainer.png&quot;width=&quot;700&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>60</y>
+            <width>671</width>
+            <height>361</height>
+           </rect>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::NoContextMenu</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);
+background-color: rgb(218, 231, 248);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="lineWrapMode">
+           <enum>QPlainTextEdit::NoWrap</enum>
+          </property>
+          <property name="plainText">
+           <string>Content......</string>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="createButton">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>490</y>
+            <width>61</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/Main/SignInRegPage/EnterButton.png</normaloff>:/Main/SignInRegPage/EnterButton.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="CreatePostpage2">
+         <widget class="QPushButton" name="doneButton">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>490</y>
+            <width>61</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/Main/SignInRegPage/EnterButton.png</normaloff>:/Main/SignInRegPage/EnterButton.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="background_5">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>841</width>
+            <height>631</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="bgContainer_2">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>20</y>
+            <width>891</width>
+            <height>581</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/friendContainer.png&quot;height=&quot;600&quot; /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Style_5">
+          <property name="geometry">
+           <rect>
+            <x>-50</x>
+            <y>-30</y>
+            <width>921</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Style1.png&quot;width=&quot;1000&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="googlecheckBox">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>103</y>
+            <width>20</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="googleLogo">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>80</y>
+            <width>61</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/google.png&quot;width=&quot;65&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="facebookLogo">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>350</y>
+            <width>61</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/facebook.png&quot;width=&quot;65&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="twitterLogo">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>260</y>
+            <width>61</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/twitter.png&quot;width=&quot;65&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="smsLogo">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>170</y>
+            <width>71</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/sms.png&quot;width=&quot;65&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="smscheckBox">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>190</y>
+            <width>20</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="twittercheckBox">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>280</y>
+            <width>20</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="facebookcheckBox">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>370</y>
+            <width>20</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gmailContain">
+          <property name="geometry">
+           <rect>
+            <x>258</x>
+            <y>82</y>
+            <width>561</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/friendSearch.png&quot;width=&quot;550&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="gmailEnter">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>100</y>
+            <width>521</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(218, 231, 248);
+color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Receiver Gmail Account</string>
+          </property>
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="smsContain">
+          <property name="geometry">
+           <rect>
+            <x>258</x>
+            <y>170</y>
+            <width>561</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/friendSearch.png&quot;width=&quot;550&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="smsEnter">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>188</y>
+            <width>521</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(218, 231, 248);
+color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Receiver Phone Number</string>
+          </property>
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <zorder>background_5</zorder>
+         <zorder>Style_5</zorder>
+         <zorder>bgContainer_2</zorder>
+         <zorder>doneButton</zorder>
+         <zorder>googlecheckBox</zorder>
+         <zorder>googleLogo</zorder>
+         <zorder>facebookLogo</zorder>
+         <zorder>twitterLogo</zorder>
+         <zorder>smsLogo</zorder>
+         <zorder>smscheckBox</zorder>
+         <zorder>twittercheckBox</zorder>
+         <zorder>facebookcheckBox</zorder>
+         <zorder>gmailContain</zorder>
+         <zorder>gmailEnter</zorder>
+         <zorder>smsContain</zorder>
+         <zorder>smsEnter</zorder>
+        </widget>
+        <widget class="QWidget" name="Profilepage">
+         <widget class="QLabel" name="avatar_2">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>20</y>
+            <width>131</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Avatar.png&quot; height=&quot;130&quot; weight=&quot;130&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="background_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>841</width>
+            <height>631</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Style_2">
+          <property name="geometry">
+           <rect>
+            <x>-50</x>
+            <y>-30</y>
+            <width>921</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Style1.png&quot;width=&quot;1000&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="caption_2">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>90</y>
+            <width>511</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(209, 209, 209);</string>
+          </property>
+          <property name="text">
+           <string>Hi I am not here for the app</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="name_2">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>40</y>
+            <width>501</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>20</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="otherBtn">
+          <property name="geometry">
+           <rect>
+            <x>760</x>
+            <y>30</y>
+            <width>51</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/User/User/menu.png</normaloff>:/User/User/menu.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="editBtn">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>540</y>
+            <width>271</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/User/User/btn2.png</normaloff>:/User/User/btn2.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>250</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="deleteBtn">
+          <property name="geometry">
+           <rect>
+            <x>480</x>
+            <y>540</y>
+            <width>271</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/User/User/btn1.png</normaloff>:/User/User/btn1.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>250</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="editBtnTitle">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>560</y>
+            <width>91</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>Edit Profile</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="deleteBtnTitle">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>560</y>
+            <width>131</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>Disable Account</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="nameLogo">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>220</y>
+            <width>71</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/nametag.png&quot; width=&quot;65&quot; height=&quot;65&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="phoneLogo">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>310</y>
+            <width>71</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/phone.png&quot;width=&quot;65&quot; height=&quot;65&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="mailLogo">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>410</y>
+            <width>71</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/mail.png&quot;width=&quot;65&quot; height=&quot;65&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="defaultMessageLogo">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>220</y>
+            <width>71</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/nametag.png&quot; width=&quot;65&quot; height=&quot;65&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="meetLinkLogo_">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>310</y>
+            <width>71</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/nametag.png&quot; width=&quot;65&quot; height=&quot;65&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="Line" name="line_9">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>280</y>
+            <width>311</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="Line" name="line_10">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>280</y>
+            <width>311</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="Line" name="line_11">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>370</y>
+            <width>311</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="Line" name="line_12">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>370</y>
+            <width>311</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="Line" name="line_13">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>480</y>
+            <width>311</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="nameTitle">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>230</y>
+            <width>111</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Display Name</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="defaultMessageTitle">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>230</y>
+            <width>131</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Default Message</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="phoneTitle">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>320</y>
+            <width>121</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Phone Number</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="meetLinkTitle">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>320</y>
+            <width>121</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Meet Link</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="mailTitle">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>420</y>
+            <width>121</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Email Address</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="phone">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>340</y>
+            <width>231</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>010-12345678</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="defaultMessage">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>250</y>
+            <width>231</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>I Am Fine</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="name_3">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>250</y>
+            <width>231</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="meetlink">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>340</y>
+            <width>231</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>meet.google.com/</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="mail">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>440</y>
+            <width>231</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>123@gmail.com</string>
+          </property>
+         </widget>
+         <zorder>background_2</zorder>
+         <zorder>Style_2</zorder>
+         <zorder>avatar_2</zorder>
+         <zorder>caption_2</zorder>
+         <zorder>name_2</zorder>
+         <zorder>otherBtn</zorder>
+         <zorder>editBtn</zorder>
+         <zorder>deleteBtn</zorder>
+         <zorder>editBtnTitle</zorder>
+         <zorder>deleteBtnTitle</zorder>
+         <zorder>nameLogo</zorder>
+         <zorder>phoneLogo</zorder>
+         <zorder>mailLogo</zorder>
+         <zorder>defaultMessageLogo</zorder>
+         <zorder>meetLinkLogo_</zorder>
+         <zorder>line_9</zorder>
+         <zorder>line_10</zorder>
+         <zorder>line_11</zorder>
+         <zorder>line_12</zorder>
+         <zorder>line_13</zorder>
+         <zorder>nameTitle</zorder>
+         <zorder>defaultMessageTitle</zorder>
+         <zorder>phoneTitle</zorder>
+         <zorder>meetLinkTitle</zorder>
+         <zorder>mailTitle</zorder>
+         <zorder>phone</zorder>
+         <zorder>defaultMessage</zorder>
+         <zorder>name_3</zorder>
+         <zorder>meetlink</zorder>
+         <zorder>mail</zorder>
+        </widget>
+        <widget class="QWidget" name="meetingSchedule">
+         <widget class="QLabel" name="Style_6">
+          <property name="geometry">
+           <rect>
+            <x>-50</x>
+            <y>-40</y>
+            <width>921</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Style1.png&quot;width=&quot;1000&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="background_6">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>841</width>
+            <height>631</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="bgContainer_3">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>20</y>
+            <width>891</width>
+            <height>581</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/friendContainer.png&quot;height=&quot;600&quot; /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QCalendarWidget" name="calendarWidget">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>60</y>
+            <width>761</width>
+            <height>461</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="scheduleTitle">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>20</y>
+            <width>251</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Select a free time&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="nextBtn">
+          <property name="geometry">
+           <rect>
+            <x>690</x>
+            <y>530</y>
+            <width>271</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/User/User/btn2.png</normaloff>:/User/User/btn2.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>250</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>740</x>
+            <y>535</y>
+            <width>61</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/arrow.png&quot; width=&quot;50&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="time" native="true">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>190</y>
+            <width>621</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>-10</y>
+             <width>601</width>
+             <height>171</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/polygon2.png&quot; width=&quot;500&quot; height=&quot;&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="scheduleTitle_2">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>20</y>
+             <width>251</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Bahnschrift SemiBold</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(115, 160, 221);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Select a free time&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QTimeEdit" name="timeEdit">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>60</y>
+             <width>231</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="editBtn_3">
+           <property name="geometry">
+            <rect>
+             <x>230</x>
+             <y>80</y>
+             <width>251</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="images_and_icons/SignInRegPage.qrc">
+             <normaloff>:/User/User/btn2.png</normaloff>:/User/User/btn2.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>206</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>336</x>
+             <y>87</y>
+             <width>61</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/arrow.png&quot; width=&quot;40&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </widget>
+         <zorder>background_6</zorder>
+         <zorder>Style_6</zorder>
+         <zorder>bgContainer_3</zorder>
+         <zorder>calendarWidget</zorder>
+         <zorder>scheduleTitle</zorder>
+         <zorder>nextBtn</zorder>
+         <zorder>label_2</zorder>
+         <zorder>time</zorder>
+        </widget>
+        <widget class="QWidget" name="meetingSchedule2">
+         <widget class="QLabel" name="background_7">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>841</width>
+            <height>631</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="bgContainer_4">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>20</y>
+            <width>891</width>
+            <height>581</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/friendContainer.png&quot;height=&quot;600&quot; /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Style_7">
+          <property name="geometry">
+           <rect>
+            <x>-50</x>
+            <y>-40</y>
+            <width>921</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Style1.png&quot;width=&quot;1000&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="nextBtn_2">
+          <property name="geometry">
+           <rect>
+            <x>680</x>
+            <y>535</y>
+            <width>271</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/User/User/btn2.png</normaloff>:/User/User/btn2.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>250</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>730</x>
+            <y>540</y>
+            <width>61</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/arrow.png&quot; width=&quot;50&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="googleLogo_2">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>70</y>
+            <width>61</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/google.png&quot;width=&quot;65&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gmailContain_2">
+          <property name="geometry">
+           <rect>
+            <x>174</x>
+            <y>71</y>
+            <width>561</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/friendSearch.png&quot;width=&quot;550&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="invitationTitle">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>20</y>
+            <width>251</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Invitation&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>90</y>
+            <width>491</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(218, 231, 248);
+color: rgb(127, 134, 144);</string>
+          </property>
+          <property name="text">
+           <string>Receiver Gmail Account</string>
+          </property>
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="addMore">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>130</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(127, 134, 144);</string>
+          </property>
+          <property name="text">
+           <string>Add more......</string>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <zorder>background_7</zorder>
+         <zorder>Style_7</zorder>
+         <zorder>bgContainer_4</zorder>
+         <zorder>nextBtn_2</zorder>
+         <zorder>label_5</zorder>
+         <zorder>googleLogo_2</zorder>
+         <zorder>gmailContain_2</zorder>
+         <zorder>invitationTitle</zorder>
+         <zorder>lineEdit</zorder>
+         <zorder>addMore</zorder>
+        </widget>
+        <widget class="QWidget" name="history">
+         <widget class="QLabel" name="background_8">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>841</width>
+            <height>631</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="bgContainer_5">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>140</y>
+            <width>891</width>
+            <height>581</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/friendContainer.png&quot;height=&quot;600&quot; /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Style_8">
+          <property name="geometry">
+           <rect>
+            <x>-50</x>
+            <y>-40</y>
+            <width>921</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Style1.png&quot;width=&quot;1000&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="historyTitle">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>150</y>
+            <width>251</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;History&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="name_4">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>30</y>
+            <width>501</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>20</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="avatar_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>10</y>
+            <width>131</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Avatar.png&quot; height=&quot;130&quot; weight=&quot;130&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="caption_3">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>80</y>
+            <width>511</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(209, 209, 209);</string>
+          </property>
+          <property name="text">
+           <string>Hi I am not here for the app</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="otherBtn_2">
+          <property name="geometry">
+           <rect>
+            <x>750</x>
+            <y>40</y>
+            <width>51</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/User/User/menu.png</normaloff>:/User/User/menu.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QScrollArea" name="historyContent">
+          <property name="geometry">
+           <rect>
+            <x>79</x>
+            <y>196</y>
+            <width>761</width>
+            <height>431</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(166, 198, 240);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>761</width>
+             <height>431</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+         <zorder>background_8</zorder>
+         <zorder>Style_8</zorder>
+         <zorder>bgContainer_5</zorder>
+         <zorder>historyTitle</zorder>
+         <zorder>name_4</zorder>
+         <zorder>avatar_3</zorder>
+         <zorder>caption_3</zorder>
+         <zorder>otherBtn_2</zorder>
+         <zorder>historyContent</zorder>
+        </widget>
+        <widget class="QWidget" name="setting_user">
+         <widget class="QLabel" name="caption_4">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>90</y>
+            <width>511</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(209, 209, 209);</string>
+          </property>
+          <property name="text">
+           <string>Hi I am not here for the app</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="otherBtn_3">
+          <property name="geometry">
+           <rect>
+            <x>740</x>
+            <y>50</y>
+            <width>51</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/User/User/menu.png</normaloff>:/User/User/menu.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="background_9">
+          <property name="geometry">
+           <rect>
+            <x>-10</x>
+            <y>10</y>
+            <width>841</width>
+            <height>631</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="name_5">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>40</y>
+            <width>501</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>20</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Style_9">
+          <property name="geometry">
+           <rect>
+            <x>-60</x>
+            <y>-30</y>
+            <width>921</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Style1.png&quot;width=&quot;1000&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="avatar_4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>131</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Avatar.png&quot; height=&quot;130&quot; weight=&quot;130&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="Line" name="line_14">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>270</y>
+            <width>721</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="Line" name="line_15">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>368</y>
+            <width>721</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="Line" name="line_16">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>480</y>
+            <width>721</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="brightLogo">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>210</y>
+            <width>61</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/sun.png&quot; width=&quot;60&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="startupLogo">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>310</y>
+            <width>61</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/windows.png&quot; width=&quot;60&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="NotifSetLogo">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>410</y>
+            <width>61</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/notifications  black.png&quot; width=&quot;60&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="brightTitle">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>220</y>
+            <width>111</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Brightness</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="startupTitle">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>300</y>
+            <width>201</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>18</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Startup</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="startupCaption">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>340</y>
+            <width>151</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Open when startup</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="noticeTitle">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>410</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>18</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Notification Remainder</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="noticeCaption">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>450</y>
+            <width>491</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Pop out message on your desktop when there is new notification</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="startupcheckBox">
+          <property name="geometry">
+           <rect>
+            <x>710</x>
+            <y>330</y>
+            <width>81</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="noticecheckBox">
+          <property name="geometry">
+           <rect>
+            <x>710</x>
+            <y>430</y>
+            <width>81</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QSlider" name="brightnessSlider">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>240</y>
+            <width>291</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::NoTicks</enum>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="logoutBtn">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>520</y>
+            <width>271</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/User/User/btn2.png</normaloff>:/User/User/btn2.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>250</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="logoutTitle">
+          <property name="geometry">
+           <rect>
+            <x>399</x>
+            <y>538</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>Logout</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>530</y>
+            <width>41</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/logout.png&quot; width=&quot;35&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <zorder>background_9</zorder>
+         <zorder>Style_9</zorder>
+         <zorder>avatar_4</zorder>
+         <zorder>caption_4</zorder>
+         <zorder>name_5</zorder>
+         <zorder>otherBtn_3</zorder>
+         <zorder>line_14</zorder>
+         <zorder>line_15</zorder>
+         <zorder>line_16</zorder>
+         <zorder>brightLogo</zorder>
+         <zorder>startupLogo</zorder>
+         <zorder>NotifSetLogo</zorder>
+         <zorder>brightTitle</zorder>
+         <zorder>startupTitle</zorder>
+         <zorder>startupCaption</zorder>
+         <zorder>noticeTitle</zorder>
+         <zorder>noticeCaption</zorder>
+         <zorder>startupcheckBox</zorder>
+         <zorder>noticecheckBox</zorder>
+         <zorder>brightnessSlider</zorder>
+         <zorder>logoutBtn</zorder>
+         <zorder>logoutTitle</zorder>
+         <zorder>label_6</zorder>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="AdminPage">
+       <widget class="QWidget" name="Button_2" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>51</width>
+          <height>631</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(32, 34, 37);</string>
+        </property>
+        <widget class="QPushButton" name="profileBtn_admin">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>60</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images_and_icons/SignInRegPage.qrc">
+           <normaloff>:/User/User/profile.png</normaloff>:/User/User/profile.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="mainBtn_admin">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images_and_icons/SignInRegPage.qrc">
+           <normaloff>:/User/User/home.png</normaloff>:/User/User/home.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="makeAnnocementBtn">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>120</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images_and_icons/SignInRegPage.qrc">
+           <normaloff>:/admin/Admin/make announcement.png</normaloff>:/admin/Admin/make announcement.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="manageUserBtn">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>180</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images_and_icons/SignInRegPage.qrc">
+           <normaloff>:/admin/Admin/manage user.png</normaloff>:/admin/Admin/manage user.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="adminLogBtn">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>240</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images_and_icons/SignInRegPage.qrc">
+           <normaloff>:/admin/Admin/admin log.png</normaloff>:/admin/Admin/admin log.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="settingButton_admin">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>580</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="images_and_icons/SignInRegPage.qrc">
+           <normaloff>:/User/User/setting.png</normaloff>:/User/User/setting.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="geometry">
+         <rect>
+          <x>51</x>
+          <y>-1</y>
+          <width>841</width>
+          <height>631</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="Homepage_admin">
+         <widget class="QWidget" name="bg" native="true">
+          <property name="geometry">
+           <rect>
+            <x>-1</x>
+            <y>-1</y>
+            <width>841</width>
+            <height>631</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <widget class="QLabel" name="style">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>-220</y>
+             <width>731</width>
+             <height>741</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/admin/Admin/style1.png&quot; width=&quot;700&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>350</y>
+             <width>721</width>
+             <height>321</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/admin/Admin/style2.png&quot; width=&quot;700&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="homeTitle1">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>0</y>
+             <width>271</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Bahnschrift SemiBold</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(242, 242, 242);
+background-color: rgb(149, 165, 180);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;User Join Statistics&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="homeTitle_2">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>400</y>
+             <width>271</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Bahnschrift SemiBold</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(242, 242, 242);
+background-color: rgb(141, 184, 223);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;User Post Statistics&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date1">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>40</y>
+             <width>151</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Bahnschrift SemiBold</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(30, 55, 84);
+background-color: rgb(149, 165, 180);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;APRIL 2021&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date2">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>440</y>
+             <width>271</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Bahnschrift SemiBold</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(30, 55, 84);
+background-color: rgb(141, 184, 223);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;APRIL 2021&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>80</y>
+             <width>641</width>
+             <height>221</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/admin/Admin/graph1.png&quot;width=&quot;650&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>470</y>
+             <width>471</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/admin/Admin/graph2.png&quot;width=&quot;500&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="datebtn1">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>46</y>
+             <width>31</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="images_and_icons/SignInRegPage.qrc">
+             <normaloff>:/admin/Admin/arrow 2.png</normaloff>:/admin/Admin/arrow 2.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="datebtn2">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>45</y>
+             <width>31</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="images_and_icons/SignInRegPage.qrc">
+             <normaloff>:/admin/Admin/arrow 1.png</normaloff>:/admin/Admin/arrow 1.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="datebtn3">
+           <property name="geometry">
+            <rect>
+             <x>311</x>
+             <y>445</y>
+             <width>31</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="images_and_icons/SignInRegPage.qrc">
+             <normaloff>:/admin/Admin/arrow 2.png</normaloff>:/admin/Admin/arrow 2.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="datebtn4">
+           <property name="geometry">
+            <rect>
+             <x>457</x>
+             <y>444</y>
+             <width>21</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="images_and_icons/SignInRegPage.qrc">
+             <normaloff>:/admin/Admin/arrow 1.png</normaloff>:/admin/Admin/arrow 1.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <zorder>style</zorder>
+          <zorder>date1</zorder>
+          <zorder>homeTitle1</zorder>
+          <zorder>label_8</zorder>
+          <zorder>homeTitle_2</zorder>
+          <zorder>date2</zorder>
+          <zorder>label_7</zorder>
+          <zorder>label_9</zorder>
+          <zorder>datebtn1</zorder>
+          <zorder>datebtn2</zorder>
+          <zorder>datebtn3</zorder>
+          <zorder>datebtn4</zorder>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="Profilepage_admin">
+         <widget class="QLabel" name="bg_2">
+          <property name="geometry">
+           <rect>
+            <x>-6</x>
+            <y>-5</y>
+            <width>851</width>
+            <height>641</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="style_2">
+          <property name="geometry">
+           <rect>
+            <x>-50</x>
+            <y>-40</y>
+            <width>911</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/admin/Admin/style3.png&quot;width=&quot;1000&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="phoneLogo_2">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>310</y>
+            <width>71</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/phone.png&quot;width=&quot;65&quot; height=&quot;65&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="Line" name="line_17">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>370</y>
+            <width>671</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="mail_2">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>440</y>
+            <width>231</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>123@gmail.com</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="mailLogo_2">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>410</y>
+            <width>71</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/mail.png&quot;width=&quot;65&quot; height=&quot;65&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="editBtn_2">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>530</y>
+            <width>271</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/User/User/btn2.png</normaloff>:/User/User/btn2.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>250</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="name_6">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>40</y>
+            <width>501</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>20</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="phoneTitle_2">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>320</y>
+            <width>121</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Phone Number</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="editBtnTitle_2">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>550</y>
+            <width>91</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>Edit Profile</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="nameLogo_2">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>220</y>
+            <width>71</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/nametag.png&quot; width=&quot;65&quot; height=&quot;65&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="mailTitle_2">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>420</y>
+            <width>121</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Email Address</string>
+          </property>
+         </widget>
+         <widget class="Line" name="line_18">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>480</y>
+            <width>681</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="avatar_5">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>20</y>
+            <width>131</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Avatar.png&quot; height=&quot;130&quot; weight=&quot;130&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="nameTitle_2">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>230</y>
+            <width>111</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Display Name</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="caption_5">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>90</y>
+            <width>511</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(209, 209, 209);</string>
+          </property>
+          <property name="text">
+           <string>Hi I am not here for the app</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="name_7">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>250</y>
+            <width>231</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </widget>
+         <widget class="Line" name="line_19">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>280</y>
+            <width>671</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="phone_2">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>340</y>
+            <width>231</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>010-12345678</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="makeAnnoucementPage">
+         <widget class="QLabel" name="style_3">
+          <property name="geometry">
+           <rect>
+            <x>-44</x>
+            <y>-35</y>
+            <width>911</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/admin/Admin/style3.png&quot;width=&quot;1000&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="bg_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>851</width>
+            <height>641</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_2">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>60</y>
+            <width>671</width>
+            <height>361</height>
+           </rect>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::NoContextMenu</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);
+background-color: rgb(218, 231, 248);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="lineWrapMode">
+           <enum>QPlainTextEdit::NoWrap</enum>
+          </property>
+          <property name="plainText">
+           <string>Content......</string>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="contentContainer_2">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>30</y>
+            <width>741</width>
+            <height>431</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/messageContainer.png&quot;width=&quot;700&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="bgContainer_6">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>20</y>
+            <width>891</width>
+            <height>581</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/friendContainer.png&quot;height=&quot;600&quot; /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="makeBtn">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>500</y>
+            <width>271</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/User/User/btn2.png</normaloff>:/User/User/btn2.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>250</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="makeBtnTitle">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>520</y>
+            <width>151</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>Make Annoucement</string>
+          </property>
+         </widget>
+         <zorder>bg_3</zorder>
+         <zorder>style_3</zorder>
+         <zorder>bgContainer_6</zorder>
+         <zorder>contentContainer_2</zorder>
+         <zorder>plainTextEdit_2</zorder>
+         <zorder>makeBtn</zorder>
+         <zorder>makeBtnTitle</zorder>
+        </widget>
+        <widget class="QWidget" name="manageUserPage">
+         <widget class="QLabel" name="bg_4">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>851</width>
+            <height>641</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="style_4">
+          <property name="geometry">
+           <rect>
+            <x>-44</x>
+            <y>-35</y>
+            <width>911</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/admin/Admin/style3.png&quot;width=&quot;1000&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="searchEnter_2">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>70</y>
+            <width>481</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
+color: rgb(167, 165, 165);
+background-color: rgb(152, 219, 169);</string>
+          </property>
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Search by username</string>
+          </property>
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QScrollArea" name="userAccContent_2">
+          <property name="geometry">
+           <rect>
+            <x>39</x>
+            <y>156</y>
+            <width>761</width>
+            <height>471</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(166, 198, 240);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>761</width>
+             <height>471</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="userAccTitle">
+          <property name="geometry">
+           <rect>
+            <x>320</x>
+            <y>120</y>
+            <width>191</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;User Account&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="searchLogo_2">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>60</y>
+            <width>31</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/scope.png&quot;width=&quot;25&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="userAccSearch">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>50</y>
+            <width>561</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/friendSearch.png&quot;width=&quot;550&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="userAccContainer">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>120</y>
+            <width>811</width>
+            <height>511</height>
+           </rect>
+          </property>
+          <property name="toolTipDuration">
+           <number>-1</number>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/friendContainer.png&quot;width=&quot;800&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <zorder>bg_4</zorder>
+         <zorder>style_4</zorder>
+         <zorder>userAccContainer</zorder>
+         <zorder>userAccSearch</zorder>
+         <zorder>userAccTitle</zorder>
+         <zorder>searchLogo_2</zorder>
+         <zorder>searchEnter_2</zorder>
+         <zorder>userAccContent_2</zorder>
+        </widget>
+        <widget class="QWidget" name="adminLog">
+         <widget class="QLabel" name="bg_5">
+          <property name="geometry">
+           <rect>
+            <x>-10</x>
+            <y>-10</y>
+            <width>851</width>
+            <height>641</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="style_5">
+          <property name="geometry">
+           <rect>
+            <x>-54</x>
+            <y>-45</y>
+            <width>911</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/admin/Admin/style3.png&quot;width=&quot;1000&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="searchLogo_3">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>60</y>
+            <width>31</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/scope.png&quot;width=&quot;25&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="adminLogContainer">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>120</y>
+            <width>811</width>
+            <height>511</height>
+           </rect>
+          </property>
+          <property name="toolTipDuration">
+           <number>-1</number>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/friendContainer.png&quot;width=&quot;800&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QScrollArea" name="adminLogContent">
+          <property name="geometry">
+           <rect>
+            <x>39</x>
+            <y>156</y>
+            <width>761</width>
+            <height>471</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(166, 198, 240);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_5">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>761</width>
+             <height>471</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="adminLogTitle">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>120</y>
+            <width>191</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Admin Log&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="searchEnter_3">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>70</y>
+            <width>481</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
+color: rgb(167, 165, 165);
+background-color: rgb(152, 219, 169);</string>
+          </property>
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Search by username</string>
+          </property>
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="adminLogSearch">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>50</y>
+            <width>561</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/friendSearch.png&quot;width=&quot;550&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <zorder>bg_5</zorder>
+         <zorder>style_5</zorder>
+         <zorder>adminLogContainer</zorder>
+         <zorder>adminLogContent</zorder>
+         <zorder>adminLogTitle</zorder>
+         <zorder>adminLogSearch</zorder>
+         <zorder>searchLogo_3</zorder>
+         <zorder>searchEnter_3</zorder>
+        </widget>
+        <widget class="QWidget" name="settingpage_admin">
+         <widget class="QLabel" name="style_6">
+          <property name="geometry">
+           <rect>
+            <x>-54</x>
+            <y>-45</y>
+            <width>911</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/admin/Admin/style3.png&quot;width=&quot;1000&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="avatar_6">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>30</y>
+            <width>131</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/Avatar.png&quot; height=&quot;130&quot; weight=&quot;130&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="noticeTitle_2">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>420</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>18</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Notification Remainder</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="startupTitle_2">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>310</y>
+            <width>201</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>18</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Startup</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="logoutBtn_2">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>530</y>
+            <width>271</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="images_and_icons/SignInRegPage.qrc">
+            <normaloff>:/User/User/btn2.png</normaloff>:/User/User/btn2.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>250</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="noticecheckBox_2">
+          <property name="geometry">
+           <rect>
+            <x>730</x>
+            <y>440</y>
+            <width>81</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="brightTitle_2">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>230</y>
+            <width>111</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Brightness</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="startupcheckBox_2">
+          <property name="geometry">
+           <rect>
+            <x>730</x>
+            <y>340</y>
+            <width>81</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="brightLogo_2">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>220</y>
+            <width>61</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/sun.png&quot; width=&quot;60&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="startupLogo_2">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>320</y>
+            <width>61</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/windows.png&quot; width=&quot;60&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="Line" name="line_20">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>490</y>
+            <width>721</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="NotifSetLogo_2">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>420</y>
+            <width>61</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/notifications  black.png&quot; width=&quot;60&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="name_8">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>50</y>
+            <width>501</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>20</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="startupCaption_2">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>350</y>
+            <width>151</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Open when startup</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="caption_6">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>100</y>
+            <width>511</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(209, 209, 209);</string>
+          </property>
+          <property name="text">
+           <string>Hi I am not here for the app</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="noticeCaption_2">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>460</y>
+            <width>491</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 165, 180);</string>
+          </property>
+          <property name="text">
+           <string>Pop out message on your desktop when there is new notification</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="brightnessSlider_2">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>250</y>
+            <width>291</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::NoTicks</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="bg_6">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>851</width>
+            <height>641</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="Line" name="line_21">
+          <property name="geometry">
+           <rect>
+            <x>71</x>
+            <y>378</y>
+            <width>721</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(167, 165, 165);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_10">
+          <property name="geometry">
+           <rect>
+            <x>371</x>
+            <y>540</y>
+            <width>41</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/User/User/logout.png&quot; width=&quot;35&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="logoutTitle_2">
+          <property name="geometry">
+           <rect>
+            <x>420</x>
+            <y>548</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(242, 242, 242);</string>
+          </property>
+          <property name="text">
+           <string>Logout</string>
+          </property>
+         </widget>
+         <zorder>bg_6</zorder>
+         <zorder>style_6</zorder>
+         <zorder>avatar_6</zorder>
+         <zorder>noticeTitle_2</zorder>
+         <zorder>startupTitle_2</zorder>
+         <zorder>logoutBtn_2</zorder>
+         <zorder>noticecheckBox_2</zorder>
+         <zorder>brightTitle_2</zorder>
+         <zorder>startupcheckBox_2</zorder>
+         <zorder>brightLogo_2</zorder>
+         <zorder>startupLogo_2</zorder>
+         <zorder>line_20</zorder>
+         <zorder>NotifSetLogo_2</zorder>
+         <zorder>name_8</zorder>
+         <zorder>startupCaption_2</zorder>
+         <zorder>caption_6</zorder>
+         <zorder>noticeCaption_2</zorder>
+         <zorder>brightnessSlider_2</zorder>
+         <zorder>line_21</zorder>
+         <zorder>label_10</zorder>
+         <zorder>logoutTitle_2</zorder>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images_and_icons/SignInRegPage.qrc"/>
+ </resources>
+ <connections/>
+</ui>
