@@ -9,6 +9,11 @@ from qtpy import QtGui
 from ui_mainGUI import *
 
 import screen_brightness_control as sbc
+import requests
+
+URL = "https://im-fine-backend.herokuapp.com/api"
+token = ""
+user_id = 0
 
 
 class MainWindow(QMainWindow):
@@ -74,11 +79,33 @@ class MainWindow(QMainWindow):
         self.show()
 
     def login_checker(self):
-        email = self.ui.emailEnter.text().upper()
-        if email == 'ADMIN':
-            self.ui.mainSwitch.setCurrentWidget(self.ui.AdminPage)
-        elif email == 'USER':
-            self.ui.mainSwitch.setCurrentWidget(self.ui.UserPage)
+        global token
+        global user_id
+        username = self.ui.emailEnter.text()
+        password = self.ui.PasswordEnter.text()
+
+        # request data
+        data = {"username" : username,
+                "password" : password}
+
+        # Make request
+        r = requests.post(url = URL + "/auth/login/", data = data)
+
+        if r.status_code == 200:
+            token = r.json()["key"]
+            user_id = r.json()["user_id"]
+
+            headers = {"Authorization": f"Token {token}"}
+
+            user_type = requests.get(url =f"{URL}/users/{user_id}", headers = headers).json()["userType"]
+
+            if user_type == "ADMIN":
+                self.ui.mainSwitch.setCurrentWidget(self.ui.AdminPage)
+            elif user_type == "REGULAR":
+                self.ui.mainSwitch.setCurrentWidget(self.ui.UserPage)
+        else:
+            print("Authentication Failed")
+
 
     def notification_control(self):
         if self.ui.notification_Win.isVisible():
@@ -91,3 +118,6 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = MainWindow()
     sys.exit(app.exec_())
+
+
+# af38b4eb0f8e5c8ec5c02b408f576bcc26984727
