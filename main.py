@@ -13,6 +13,7 @@ import requests
 
 URL = "https://im-fine-backend.herokuapp.com/api"
 token = ""
+user = {}
 user_id = 0
 
 
@@ -31,7 +32,8 @@ class MainWindow(QMainWindow):
         #########################
         self.ui.SignIn.clicked.connect(lambda: self.ui.switchSignInReg.setCurrentWidget(self.ui.SignIn_2))
         self.ui.Reg.clicked.connect(lambda: self.ui.switchSignInReg.setCurrentWidget(self.ui.Register))
-        self.ui.LoginButton.clicked.connect(lambda: self.login_checker())
+        self.ui.LoginButton.clicked.connect(lambda: [self.login_checker(),
+                                                     self.update_profile()])
 
         # User
         self.ui.mainBtn.clicked.connect(lambda: self.ui.userPageSwitch.setCurrentWidget(self.ui.Homepage))
@@ -80,6 +82,7 @@ class MainWindow(QMainWindow):
 
     def login_checker(self):
         global token
+        global user
         global user_id
         username = self.ui.emailEnter.text()
         password = self.ui.PasswordEnter.text()
@@ -97,7 +100,8 @@ class MainWindow(QMainWindow):
 
             headers = {"Authorization": f"Token {token}"}
 
-            user_type = requests.get(url =f"{URL}/users/{user_id}", headers = headers).json()["userType"]
+            user = requests.get(url =f"{URL}/users/{user_id}", headers = headers).json()
+            user_type = user["userType"]
 
             if user_type == "ADMIN":
                 self.ui.mainSwitch.setCurrentWidget(self.ui.AdminPage)
@@ -105,6 +109,15 @@ class MainWindow(QMainWindow):
                 self.ui.mainSwitch.setCurrentWidget(self.ui.UserPage)
         else:
             print("Authentication Failed")
+
+
+    def update_profile(self):
+        self.ui.name.setText(user["username"])
+        self.ui.name_2.setText(user["username"])
+        self.ui.name_3.setText(user["username"])
+        self.ui.name_4.setText(user["username"])
+        self.ui.name_5.setText(user["username"])
+        self.ui.mail.setText(user["email"])
 
 
     def notification_control(self):
@@ -119,5 +132,3 @@ if __name__ == "__main__":
     window = MainWindow()
     sys.exit(app.exec_())
 
-
-# af38b4eb0f8e5c8ec5c02b408f576bcc26984727
