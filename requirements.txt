@@ -1,0 +1,5 @@
+PyQt5==5.15.6
+PySide2==5.15.2
+qt_material==2.8.13
+QtPy==1.11.2
+screen_brightness_control==0.11.3
