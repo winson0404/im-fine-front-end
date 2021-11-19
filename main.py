@@ -34,6 +34,8 @@ class MainWindow(QMainWindow):
         self.ui.Reg.clicked.connect(lambda: self.ui.switchSignInReg.setCurrentWidget(self.ui.Register))
         self.ui.LoginButton.clicked.connect(lambda: [self.login_checker(),
                                                      self.update_profile()])
+        self.ui.regButton.clicked.connect(lambda: [self.registration(),
+                                                   self.ui.userPageSwitch.setCurrentWidget(self.ui.Homepage)])
 
         # User
         self.ui.mainBtn.clicked.connect(lambda: self.ui.userPageSwitch.setCurrentWidget(self.ui.Homepage))
@@ -129,6 +131,31 @@ class MainWindow(QMainWindow):
             self.ui.notification_Win.setVisible(False)
         else:
             self.ui.notification_Win.setVisible(True)
+
+    def registration(self):
+        global token
+        global user
+        global user_id
+        username = self.ui.usenameEnter.text()
+        password = self.ui.emailEnter_3.text()
+        email = self.ui.PasswordEnter_2.text()
+
+        # request data
+        data = {"username" : username,
+                "email" : email,
+                "password1" : password,
+                "password2" : password,
+                "userType" : "REGULAR"}
+
+        # Make request
+        r = requests.post(url = URL + "/auth/register/", data = data)
+
+        if r.status_code == 201:
+            token = r.json()["key"]
+            user_id = r.json()["user_id"]
+            self.ui.mainSwitch.setCurrentWidget(self.ui.UserPage)
+        else:
+            print("Authentication Failed")
 
 
 if __name__ == "__main__":
