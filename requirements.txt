@@ -1,4 +1,4 @@
-PyQt5==5.15.6
+PyQt5==5.15.4
 PySide2==5.15.2
 qt_material==2.8.13
 QtPy==1.11.2
