@@ -117,6 +117,10 @@ class MainWindow(QMainWindow):
         self.ui.name_3.setText(user["username"])
         self.ui.name_4.setText(user["username"])
         self.ui.name_5.setText(user["username"])
+        self.ui.name_6.setText(user["username"])
+        self.ui.name_7.setText(user["username"])
+        self.ui.name_8.setText(user["username"])
+        self.ui.mail_2.setText(user["email"])
         self.ui.mail.setText(user["email"])
 
 
