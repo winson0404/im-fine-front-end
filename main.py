@@ -32,8 +32,7 @@ class MainWindow(QMainWindow):
         #########################
         self.ui.SignIn.clicked.connect(lambda: self.ui.switchSignInReg.setCurrentWidget(self.ui.SignIn_2))
         self.ui.Reg.clicked.connect(lambda: self.ui.switchSignInReg.setCurrentWidget(self.ui.Register))
-        self.ui.LoginButton.clicked.connect(lambda: [self.login_checker(),
-                                                     self.update_profile()])
+        self.ui.LoginButton.clicked.connect(lambda: self.login_checker())
         self.ui.regButton.clicked.connect(lambda: [self.registration(),
                                                    self.ui.userPageSwitch.setCurrentWidget(self.ui.Homepage)])
 
@@ -106,13 +105,17 @@ class MainWindow(QMainWindow):
             user = requests.get(url =f"{URL}/users/{user_id}", headers=headers).json()
             user_type = user["userType"]
 
+            self.update_profile()
+
             if user_type == "ADMIN":
                 self.ui.mainSwitch.setCurrentWidget(self.ui.AdminPage)
             elif user_type == "REGULAR":
                 self.ui.mainSwitch.setCurrentWidget(self.ui.UserPage)
         else:
-            self.ui.error_2.setText("Please enter correct username and password")
-            print("Authentication Failed")
+            error_msg = r.text[r.text.find("[") + 2:]
+            self.ui.error_2.setWordWrap(True)
+            self.ui.error_2.setFixedHeight(50)
+            self.ui.error_2.setText(error_msg[:error_msg.find('"')])
 
 
     def update_profile(self):
@@ -159,13 +162,10 @@ class MainWindow(QMainWindow):
             user_id = r.json()["user_id"]
             self.ui.mainSwitch.setCurrentWidget(self.ui.UserPage)
         else:
-            if (r.json().get('email') != None):
-                print(r.json()['email'])
-            if (r.json().get('password1') != None):
-                print(r.json()['password1'])
-
-            self.ui.error.setText("Please complete all information required")
-            print("Authentication Failed")
+            error_msg = r.text[r.text.find("[")+2:]
+            self.ui.error.setWordWrap(True)
+            self.ui.error.setFixedHeight(50)
+            self.ui.error.setText(error_msg[:error_msg.find('"')])
 
 
 if __name__ == "__main__":
