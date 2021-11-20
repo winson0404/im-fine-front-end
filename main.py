@@ -103,7 +103,7 @@ class MainWindow(QMainWindow):
 
             headers = {"Authorization": f"Token {token}"}
 
-            user = requests.get(url =f"{URL}/users/{user_id}", headers = headers).json()
+            user = requests.get(url =f"{URL}/users/{user_id}", headers=headers).json()
             user_type = user["userType"]
 
             if user_type == "ADMIN":
@@ -150,7 +150,8 @@ class MainWindow(QMainWindow):
                 "userType" : "REGULAR"}
 
         # Make request
-        r = requests.post(url = URL + "/auth/register/", data = data)
+        r = requests.post(url=URL + "/auth/register/", data=data)
+        print(r.status_code)
 
         if r.status_code == 201:
             self.ui.error.setText("")
@@ -158,6 +159,11 @@ class MainWindow(QMainWindow):
             user_id = r.json()["user_id"]
             self.ui.mainSwitch.setCurrentWidget(self.ui.UserPage)
         else:
+            if (r.json().get('email') != None):
+                print(r.json()['email'])
+            if (r.json().get('password1') != None):
+                print(r.json()['password1'])
+
             self.ui.error.setText("Please complete all information required")
             print("Authentication Failed")
 
