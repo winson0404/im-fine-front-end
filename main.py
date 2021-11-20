@@ -43,7 +43,8 @@ class MainWindow(QMainWindow):
         self.ui.friendBtn.clicked.connect(lambda: self.ui.userPageSwitch.setCurrentWidget(self.ui.Friendpage))
         self.ui.createPostBtn.clicked.connect(lambda: self.ui.userPageSwitch.setCurrentWidget(self.ui.CreatePostpage))
         self.ui.createButton.clicked.connect(lambda: self.ui.userPageSwitch.setCurrentWidget(self.ui.CreatePostpage2))
-        self.ui.doneButton.clicked.connect(lambda: self.ui.userPageSwitch.setCurrentWidget(self.ui.CreatePostpage))
+        self.ui.doneButton.clicked.connect(lambda: [self.ui.userPageSwitch.setCurrentWidget(self.ui.CreatePostpage),
+                                                    self.ui.plainTextEdit.setPlainText("")])
         self.ui.meetScheduleBtn.clicked.connect(lambda: self.ui.userPageSwitch.setCurrentWidget(self.ui.meetingSchedule)
                                                 )
         self.ui.nextBtn.clicked.connect(lambda: self.ui.time.setVisible(True))
@@ -59,15 +60,15 @@ class MainWindow(QMainWindow):
         self.ui.brightnessSlider.sliderReleased.connect(lambda: sbc.set_brightness(self.ui.brightnessSlider.value()))
         self.ui.logoutBtn.clicked.connect(lambda: [self.ui.switchSignInReg.setCurrentWidget(self.ui.SignIn_2),
                                                    self.ui.mainSwitch.setCurrentWidget(self.ui.SignInRegPage),
-                                                   self.ui.emailEnter.setText("Email"),
-                                                   self.ui.PasswordEnter.setText("Password")
+                                                   self.ui.emailEnter.setPlaceholderText("Username"),
+                                                   self.ui.PasswordEnter.setPlaceholderText("Password")
                                                    ])
 
         # Admin
         self.ui.mainBtn_admin.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.Homepage_admin))
         self.ui.profileBtn_admin.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.Profilepage_admin))
         self.ui.makeAnnocementBtn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.makeAnnoucementPage))
-        self.ui.makeBtn.clicked.connect(lambda: self.ui.plainTextEdit_2.setPlainText("Content......"))
+        self.ui.makeBtn.clicked.connect(lambda: self.ui.plainTextEdit_2.setPlainText(""))
         self.ui.manageUserBtn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.manageUserPage))
         self.ui.adminLogBtn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.adminLog))
         self.ui.settingButton_admin.clicked.connect(lambda: [self.ui.stackedWidget.setCurrentWidget(self.ui.settingpage_admin),
@@ -76,8 +77,8 @@ class MainWindow(QMainWindow):
         self.ui.brightnessSlider_2.sliderReleased.connect(lambda: sbc.set_brightness(self.ui.brightnessSlider_2.value()))
         self.ui.logoutBtn_2.clicked.connect(lambda: [self.ui.switchSignInReg.setCurrentWidget(self.ui.SignIn_2),
                                                    self.ui.mainSwitch.setCurrentWidget(self.ui.SignInRegPage),
-                                                   self.ui.emailEnter.setText("Email"),
-                                                   self.ui.PasswordEnter.setText("Password")
+                                                   self.ui.emailEnter.setPlaceholderText("Username"),
+                                                   self.ui.PasswordEnter.setPlaceholderText("Password")
                                                    ])
         self.show()
 
