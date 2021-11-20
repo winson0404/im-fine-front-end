@@ -161,6 +161,7 @@ class MainWindow(QMainWindow):
             self.ui.error.setText("")
             token = r.json()["key"]
             user_id = r.json()["user_id"]
+            self.update_profile()
             self.ui.mainSwitch.setCurrentWidget(self.ui.UserPage)
         else:
             error_msg = r.text[r.text.find("[")+2:]
