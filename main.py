@@ -161,6 +161,11 @@ class MainWindow(QMainWindow):
             self.ui.error.setText("")
             token = r.json()["key"]
             user_id = r.json()["user_id"]
+
+            headers = {"Authorization": f"Token {token}"}
+
+            user = requests.get(url=f"{URL}/users/{user_id}", headers=headers).json()
+
             self.update_profile()
             self.ui.mainSwitch.setCurrentWidget(self.ui.UserPage)
         else:
