@@ -1976,10 +1976,10 @@ class Ui_MainWindow(object):
         self.caption_3.setText(QCoreApplication.translate("MainWindow", u"Hi I am not here for the app", None))
         self.otherBtn_2.setText("")
         self.googleLogo_3.setText(QCoreApplication.translate("MainWindow",
-                                                             u"<html><head/><body><p><img src=\":/User/User/google.png\"width=\"65\"/></p></body></html>",
+                                                             u"<html><head/><body><p><img src=\":/User/User/facebook.png\"width=\"65\"/></p></body></html>",
                                                              None))
         self.facebookLogo_2.setText(QCoreApplication.translate("MainWindow",
-                                                               u"<html><head/><body><p><img src=\":/User/User/facebook.png\"width=\"65\"/></p></body></html>",
+                                                               u"<html><head/><body><p><img src=\":/User/User/google.png\"width=\"65\"/></p></body></html>",
                                                                None))
         self.UAname1_10.setText(QCoreApplication.translate("MainWindow", u"Content : \"I AM FINE WAHAHAHAHAHA\"", None))
         self.UAcaption_10.setText(QCoreApplication.translate("MainWindow", u"On 16/10/2021 05:46 PM", None))
